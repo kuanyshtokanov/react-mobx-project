@@ -15,7 +15,13 @@ module.exports = {
   module: {
     loaders: [{
       test: /\.jsx?$/,
-      loaders: ['babel'],
+      exclude: /node_modules/,
+      loader: ['babel'],
+      query:
+      {
+        presets: ['es2015', 'react'],
+        plugins: ['transform-decorators-legacy', 'transform-class-properties']
+      },
       include: path.join(__dirname, 'components')
     }]
   },
