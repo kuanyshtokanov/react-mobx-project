@@ -40,12 +40,12 @@ class BoxInput extends Component {
     render() {
         return (
             <div style={S('text-left font-30 mt-80 mb-80')}>
-                <div>
-                    <button onClick={this.handleBuildClicked.bind(this)}>BUILD JSON</button>
+                <div style={{ display: "flex" }}>
+                    <button style={{ marginRight: "15px" }} onClick={this.handleBuildClicked.bind(this)}>BUILD JSON</button>
                     <textarea value={this.state.value} onChange={this.handleChange.bind(this)} />
                 </div>
-                <div>
-                    <button onClick={this.handleGenerateClicked.bind(this)}>GENERATE</button>
+                <div style={{ display: "flex" }}>
+                    <button style={{ marginRight: "15px" }} onClick={this.handleGenerateClicked.bind(this)}>GENERATE</button>
                     <textarea value={this.state.generatedValue} />
                 </div>
             </div>
