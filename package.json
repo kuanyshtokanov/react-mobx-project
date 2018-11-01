@@ -6,7 +6,7 @@
   "scripts": {
     "development": "NODE_ENV=development node server-dev.js",
     "start": "NODE_ENV=production webpack -p; NODE_ENV=production node server.js",
-    "build": "webpack --config webpack.config.js",
+    "build": "NODE_ENV=production webpack --config webpack.config.js",
     "deploy": "netlify deploy",
     "transpile": "babel src -d dist --copy-files"
   },
