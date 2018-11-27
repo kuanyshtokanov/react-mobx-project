@@ -1,6 +1,8 @@
 # react-mobx-project
 this was a test project for job application to POWr
+
 The task was to implement infinite addition of a container or a colored box.
+
 After that to be able to get the copy of a structure of the root of App Container, 
 and to be able to submit a new structure in order to replace root of App container.
 
